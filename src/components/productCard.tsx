@@ -20,7 +20,6 @@ export const ProductCard: React.FC<IProductCard> = ({
   shippingInformation,
   rating,
   image,
-  added,
   stock,
 }) => {
   const dispatch = useAppDispatch();

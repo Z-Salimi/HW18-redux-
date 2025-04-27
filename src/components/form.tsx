@@ -1,4 +1,4 @@
-import { z } from "zod";
+
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "./input";
@@ -23,7 +23,7 @@ export const Form: React.FC<IFormProps> = ({ editValues }) => {
     mode: "onChange",
     resolver: zodResolver(FormSchema),
   });
-  const submit = (data: IForm) => console.log(data);
+  
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState<IForm | null>(null);
